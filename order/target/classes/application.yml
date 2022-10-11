@@ -1,2 +1,15 @@
 server:
   port: 8010
+
+spring:
+  application:
+    name: order-service-8010
+
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: 049c1b26-b64b-4f8f-98bf-2ef992996101
+

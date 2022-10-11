@@ -1,2 +1,17 @@
 server:
   port: 8020
+
+spring:
+  application:
+    name: stock-service-8020
+
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        username: nacos
+        password: nacos
+        # 命名空间使用名称无效：即dev,test等，必须使用对应的ID
+        namespace: public
+
+
